@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { PropBoolean } from '../../services';
 
 @Component({
-  selector: 'lib-container',
+  selector: 'box-container',
   templateUrl: './container.component.html',
   styleUrls: [ './../../styles/flex.scss', './container.component.scss']
 })

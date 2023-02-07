@@ -1,11 +1,38 @@
 {
-  "name": "@cardboard-box/ngx-box",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  }
+    "name": "@cardboard-box/ngx-box",
+    "version": "0.0.2",
+    "author": {
+        "name": "Cardboard",
+        "email": "holycardboardquest@gmail.com",
+        "url": "https://github.com/calico-crusade"
+    },
+    "description": "A collection of useful directives, components and services for angular",
+    "homepage": "https://github.com/calico-crusade/ngx-box",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/calico-crusade/ngx-box"
+    },
+    "keywords": [
+        "angular",
+        "material-icons",
+        "image-proxy",
+        "image-fallback",
+        "cardboard",
+        "cardboard-box"
+    ],
+    "license": "MIT",
+    "peerDependencies": {
+        "@angular/common": "^15.0.0",
+        "@angular/core": "^15.0.0",
+        "file-saver": "^2.0.5",
+        "marked": "^4.2.12"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    },
+    "devDependencies": {
+        "@types/file-saver": "^2.0.5",
+        "@types/marked": "^4.0.8"
+    }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@cardboard-box/ngx-box",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Cardboard",
     "email": "holycardboardquest@gmail.com",
@@ -8,6 +8,7 @@
   },
   "description": "A collection of useful directives, components and services for angular",
   "homepage": "https://github.com/calico-crusade",
+  "private": false,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
