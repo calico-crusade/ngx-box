@@ -1,0 +1,46 @@
+:host {
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transform: translateY(3.5px);
+}
+
+.material-symbols-outlined {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+
+    &.fill {
+        font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48;
+    }
+}
+
+.unsize {
+    height: unset;
+    width: unset;
+    font-size: inherit;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

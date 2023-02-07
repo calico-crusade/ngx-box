@@ -1,0 +1,35 @@
+.static-fill {
+    position: fixed !important;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.flex {
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    color: var(--text-color);
+    position: relative;
+
+    &.row {
+        flex-flow: column;
+    }
+
+    .fill {
+        flex: 1;
+    }
+
+    .center-vert { margin-top: auto; margin-bottom: auto; }
+    .center-horz { margin-left: auto; margin-right: auto; }
+    .center { margin: auto; }
+    .pad-left { margin-left: auto; }
+    .pad-right { margin-right: auto; }
+}

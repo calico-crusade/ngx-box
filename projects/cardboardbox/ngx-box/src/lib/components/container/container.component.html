@@ -1,0 +1,24 @@
+<main class="flex">
+    <section class="loading center" *ngIf="loading">
+        <magic-circle spin-speed="20s" width="100%" height="100%">
+            <mc-ring [text]="loadingText || 'Some fancy stuff is happening... Sit tight...'">
+                <mc-square [total]="3" [index]="0"></mc-square>
+                <mc-square [total]="3" [index]="1"></mc-square>
+                <mc-square [total]="3" [index]="2">
+                    <mc-ring text="Loading... Loading... Loading...">
+                        <mc-square [total]="3" [index]="0"></mc-square>
+                        <mc-square [total]="3" [index]="1"></mc-square>
+                        <mc-square [total]="3" [index]="2"></mc-square>
+                    </mc-ring>
+                </mc-square>
+            </mc-ring>
+        </magic-circle>
+    </section>
+    <section class="error center" *ngIf="error">
+        <h1><box-icon>warning</box-icon>An error occurred:</h1>
+        <p>{{ error }}</p>
+    </section>
+    <section class="content" *ngIf="!loading && !error" [ngClass]="{ 'scroll': handleScroll || handleScroll === '' }">
+        <ng-content></ng-content>
+    </section>
+</main>
