@@ -50,6 +50,15 @@ export class HttpService {
         return new RxjsHttpResp<T>(req, url, this.config.isProd);
     }
 
+    put<T>(url: string, body: any, options?: HttpOptions) {
+        let req = this.http.put<T>(
+            this.formatUrl(url),
+            body,
+            options
+        );
+        return new RxjsHttpResp<T>(req, url, this.config.isProd);
+    }
+
     delete<T>(url: string, options?: HttpOptions) {
         let req = this.http.delete<T>(this.formatUrl(url), options);
         return new RxjsHttpResp<T>(req, url, this.config.isProd);

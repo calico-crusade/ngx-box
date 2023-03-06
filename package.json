@@ -1,6 +1,6 @@
 {
   "name": "@cardboard-box/ngx-box",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": {
     "name": "Cardboard",
     "email": "holycardboardquest@gmail.com",
@@ -14,7 +14,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pub": "ng build --configuration production && npm publish --access public"
   },
   "dependencies": {
     "@angular/animations": "^15.0.0",
